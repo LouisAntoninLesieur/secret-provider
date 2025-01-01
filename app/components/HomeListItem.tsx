@@ -5,7 +5,7 @@ const HomeListItem = ({title, description, link}: {title: string, description: s
   return (
     <li key={title}>
       <Link href={link}>
-        <div className="flex flex-col items-center gap-4 p-2 border border-black my-2 w-1/3 mx-auto">
+        <div className="flex flex-col p-2 border border-black rounded my-2 mx-auto">
           <div className="font-bold">{title}</div>
           <div className='italic'>{description}</div>
         </div>
