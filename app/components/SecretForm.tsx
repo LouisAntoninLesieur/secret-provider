@@ -33,7 +33,7 @@ const SecretForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className='flex flex-col items-center gap-2 border border-black p-4 rounded mx-20'>
+    <form onSubmit={handleSubmit} className='flex flex-col items-center gap-2 border border-white p-4 text-white bg-gray-200 bg-opacity-20 rounded mx-20'>
       <InputField value={requiredBytes} onChange={handleChange} />
       <GenerateButton />
       <SecretDisplay secret={secret} />
