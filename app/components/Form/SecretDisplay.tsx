@@ -1,11 +1,14 @@
-const SecretDisplay = ({ secret }: { secret: string }) => (
-  <div className='flex flex-col w-1/3 p-4 rounded'>
-  {secret && 
-    <div className='flex flex-col gap-2'>
-      <div className="font-bold text-center">Your secret:</div> 
-      <div className="text-center p-8 overflow-scroll border border-white">{secret}</div>
-    </div>}
-  </div>
-);
+import { SecretDisplayProps } from "@/app/types/interfaces";
+
+const SecretDisplay = ({ secret }: SecretDisplayProps) => {
+  
+  return (
+    <div className='flex flex-col w-full sm:w-1/2 rounded mb-2'>
+      {secret && 
+        <div className="font-bold p-2 border border-white rounded break-words selection:bg-green-300 selection:text-black">{secret}</div>
+      }
+    </div>
+  );
+}
 
 export default SecretDisplay;
