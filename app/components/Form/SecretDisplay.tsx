@@ -3,7 +3,7 @@ const SecretDisplay = ({ secret }: { secret: string }) => (
   {secret && 
     <div className='flex flex-col gap-2'>
       <div className="font-bold text-center">Your secret:</div> 
-      <div className="text-center p-4 overflow-scroll border border-black">{secret}</div>
+      <div className="text-center p-8 overflow-scroll border border-white">{secret}</div>
     </div>}
   </div>
 );
