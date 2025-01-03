@@ -22,7 +22,7 @@ const CopyButton = ({secret}: CopyButtonProps) => {
     </p>
   
     :
-    <button type="button" className='p-2 rounded bg-slate-400 hover:bg-slate-600  active:bg-slate-950 active:text-white' onClick={handleCopy}>
+    <button type="button" className='p-2 rounded bg-slate-400 hover:bg-slate-600  active:bg-slate-950 active:text-white' onClick={handleCopy} aria-label="Copy secret to clipboard" title="Copy secret to clipboard">
       Copy this secret. Use it well.
     </button>
   );
