@@ -7,7 +7,7 @@ const IndependentPlay = ({bytes}: IndependentPlayProps) => {
     <div className='flex flex-col w-full sm:w-1/3 rounded mb-2'>
       {bytes && 
         <div className="bg-slate-700 p-2 border border-white rounded break-words selection:bg-green-300 selection:text-black">
-          node -e "console.log(require('crypto').randomBytes({bytes}).toString('hex'))"
+          node -e &quot;console.log(require(&apos;crypto&apos;).randomBytes({bytes}).toString(&apos;hex&apos;))&quot;
         </div>
       }
     </div>
