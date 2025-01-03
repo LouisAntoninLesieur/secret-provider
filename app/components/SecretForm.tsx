@@ -6,7 +6,7 @@ import GenerateButton from './Form/GenerateButton';
 import CopyButton from './Form/CopyButton';
 import SecretDisplay from './Form/SecretDisplay';
 import generateSecret from '@/utils/generateSecret';
-import IndependentPlay from './Form/IndependentPlay';
+import IndependentDisplay from './Form/IndependentDisplay';
 
 const SecretForm = () => {
   const values = [32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416, 448, 480, 512];
@@ -43,7 +43,7 @@ const SecretForm = () => {
       {secret && <p className='font-bold'>This secret is going to expire in {timeLeft} seconds</p>}
       <SecretDisplay secret={secret} />
       <CopyButton secret={secret}/>
-      <IndependentPlay bytes={requiredBytes} />
+      <IndependentDisplay bytes={requiredBytes} />
     </form>
   );
 };
