@@ -1,5 +1,5 @@
 import React from 'react';
-import SecretForm from '../components/SecretForm';
+import { SecretForm } from '../../components/SecretForm';
 
 const GenerateSecretPage = () => {
   return (
