@@ -8,7 +8,7 @@ import { SecretDisplay } from './Form/SecretDisplay';
 import { generateSecret } from '../utils/secrets/generateRandomHex';
 import { IndependentDisplay } from './Form/IndependentDisplay';
 
-const SecretForm = () => {
+export const SecretForm = () => {
   const values = [32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416, 448, 480, 512];
   const chrono = 8000;
   const [secret, setSecret] = useState('');
@@ -47,5 +47,3 @@ const SecretForm = () => {
     </form>
   );
 };
-
-export default SecretForm;
