@@ -1,6 +1,6 @@
 import type { Secret } from "../../types/index";
 
-export default function copySecret({ secret }: Secret) {
+export function copySecret({ secret }: Secret) {
 
   if (!secret) {
     return "No secret provided";

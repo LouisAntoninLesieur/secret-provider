@@ -1,7 +1,7 @@
 import crypto from "crypto";
 import { Bytes } from "../../types/index";
 
-export default function generateSecret({ bytes }: Bytes) {
+export function generateSecret({ bytes }: Bytes) {
 
   if (!bytes) {
     return "No bytes provided";
