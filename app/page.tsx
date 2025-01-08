@@ -1,4 +1,4 @@
-import HomeListItem from "./components/HomeListItem";
+import { HomeListItem } from "../components/common/HomeListItem";
 
 export default function Home() {
 
