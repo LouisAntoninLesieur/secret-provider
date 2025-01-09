@@ -1,5 +1,5 @@
 import React from 'react';
-import { SecretForm } from '../../components/SecretForm';
+import { GeneratorForm } from '../../components/GeneratorForm';
 
 const GenerateSecretPage = () => {
   return (
@@ -7,7 +7,7 @@ const GenerateSecretPage = () => {
       <div className="text-4xl font-bold text-center w-1/2 mx-auto mb-6">
         Generate a JWT Secret
       </div>
-      <SecretForm />
+      <GeneratorForm />
     </>
   );
 };
