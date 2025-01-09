@@ -15,3 +15,18 @@ export type Bytes = {
 export type Secret = {
   secret: string;
 }
+
+export type InputProps = {
+  label: string;
+  type: string;
+  value: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  placeholder: string;
+  required: boolean;
+  className: string;
+}
+
+export type SubmitButtonProps = {
+  name: string;
+  className: string;
+}
