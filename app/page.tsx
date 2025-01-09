@@ -1,4 +1,4 @@
-import { HomeListItem } from "../components/common/HomeListItem";
+import { LinkElement } from "../components/common/LinkElement";
 
 export default function Home() {
 
@@ -8,7 +8,7 @@ export default function Home() {
         <h2 className='text-5xl text-transparent bg-clip-text bg-gradient-to-br from-slate-00 via-slate-100 to-slate-50 text-center font-bold'>JWT Secret Generator</h2>
         <p className='text-lg'>Generate a secret. We promise nobody will know.</p>
         <hr className='w-full my-4' />
-        <HomeListItem title="Generate a secret now" link="/generate-secret" aria-label="Generate a secret now"/>
+        <LinkElement title="Generate a secret now" link="/generate-secret" aria-label="Generate a secret now"/>
       </div>
     </section>
   );
